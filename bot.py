@@ -2,7 +2,6 @@
 #Check for fields that need customization
 #Have fun!
 import discord
-import responses
 import random
 
 facts = [
