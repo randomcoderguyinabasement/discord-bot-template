@@ -4,25 +4,10 @@
 import discord
 import random
 
-facts = [
-    "This is an example of a data table",
-    "Insert information here",
-]
-
-insults = [
-    "This is another data table",
-]
-
-jokes = [
-    "This is ALSO another data table!",
-]
-
+#customization field 1
 responses = [
-    "Replace all these data tables with whatever you want",
-]
-
-greetings = [
-    "Or you can delete them and start fresh!",
+    "Have your bot",
+    "Choose from a table of responses",
 ]
 
 async def send_message(message, user_message, is_private):
@@ -32,6 +17,7 @@ async def send_message(message, user_message, is_private):
     except Exception as e:
         print(e)
 
+#customization field 2
 def run_discord_bot():
     TOKEN = 'INSERT YOUR TOKEN HERE!!!!'
     intents = discord.Intents.default()
@@ -43,7 +29,7 @@ def run_discord_bot():
         await client.change_presence(activity = discord.Game('INSERT YOUR STATUS HERE'))
         print(f'{client.user} is now running')
 
-
+#customization field 3
     @client.event
     async def on_message(message):
         if message.author == client.user:
